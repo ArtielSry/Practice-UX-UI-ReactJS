@@ -1,0 +1,39 @@
+.container__newsletter{
+    text-align: center;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container__newsletter h2 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 200;
+}
+.container__newsletter p {
+    margin: 0;
+}
+.container__sendNewsletter{
+    display: flex;
+    align-items: center;
+}
+.container__sendNewsletter svg {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    height: 27px;
+    width: 27px;
+}
+.container__newsletter input{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+@media screen and (max-width: 700px) {
+.container__newsletter h2 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 200;
+}
+}

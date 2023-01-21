@@ -1,0 +1,95 @@
+
+.product__header {
+    display: flex;
+    background-color: #e2dbd3;
+}
+
+.product__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product__header-content h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: normal;
+    line-height: 75px;
+    color: #000000;
+}
+.product__header-content__input button {
+    background-color: black;
+    flex:  0.6;  
+    width: 100%;
+    margin-top: 15px;
+    min-height: 40px;
+    color: #ffffff;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1.2em;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: 0.2s ease all;
+    font-family: 'Bebas Neue', cursive;
+}
+.product__header-content__input button:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: white;
+}
+
+.product__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product__header-image img {
+    width: 80%;
+    height: 100%;
+}
+
+@media screen and ( max-width: 1050px) {
+    .product__header {
+        flex-direction: column-reverse;
+    }
+    .product__header-content h1 {
+        margin-top: 80px;
+    }
+    .product__header-content__input button {
+        font-size: 0.9em;
+    }
+    .product__header-content__input input,
+    .product__header-content__input button {
+        font-size: 1.1em;
+    }
+    .product__header-image img {
+        width: 50%;
+    }
+}
+
+@media screen and ( max-width: 650px) {
+    .product__header p {
+        font-size: 1em;
+        line-height: 20px;
+    } 
+    .product__header-content__input input,
+    .product__header-content__input button {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and ( max-width: 490px) {
+    .product__header-content__input button {
+        display: none;
+    }
+    .product__header h1 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+    .product__header p {
+        font-size: 0.8em;
+    }  
+}

@@ -1,0 +1,178 @@
+/*container navbar*/
+.product__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem;
+    color: rgb(0, 0, 0);
+}
+/*container idioma y buscador*/
+.product__navbar-links {
+    width: 33%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.container__language{
+    color: #4d4d4d;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.container__language span{
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+}
+.product__navbar-links input {
+    height: 17px;
+    margin-right: 5px;
+    border: 1px solid #acacac;
+    padding: 10px 5px;
+}
+.product__navbar svg {
+    min-width: 20px;
+    color: #4d4d4d;
+}
+/*container logo*/
+.product__navbar-links_logo {
+    margin-right: 2rem;
+    text-align: center;
+    width: 50%;
+}
+.product__navbar-links_logo img {
+    width: 300px;
+    height: 80px;
+}
+/*container Sign in - Sing up*/
+.product__navbar-sign {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2em;
+    width: 27%;
+}
+.register {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
+/*container menu hamburguesa*/
+.product__navbar-sign p,
+.product__navbar-menu_container p {
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 10px;
+}
+.product__navbar-sign svg {
+    cursor: pointer;
+}
+
+.product__navbar-sign button,
+.product__navbar-menu_container button {  
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    color: black;
+    background-color: #ffffff;
+    font-weight: 200;
+    font-family: var(--font-family);
+    font-size: 20px;
+    height: 50px;
+    margin-left: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.product__navbar-sign button:hover,
+.product__navbar-menu_container button:hover{
+    color: white;
+    background-color: black;
+}
+
+.product__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+.product__navbar-menu svg {
+    cursor: pointer;
+    color: #515151;
+}
+
+.product__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #ffffff;
+    padding: 2rem;
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    color: rgb(0, 0, 0);
+    right: 0;
+    margin-top: 1rem;
+    min-width: 300px;
+    border: 1px solid #acacac;
+}
+
+.product__navbar-menu_container-links {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 1200px){
+    .product__navbar-menu{
+        display: flex;
+    }
+    .product__navbar-sign button,
+    .product__navbar-links_container button {
+        font-size: 0.9em;
+    }
+    .product__navbar-sign {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .product__navbar-links{
+        display: none;
+    }
+    .product__navbar-menu_container-links{
+        display: none;
+    }
+    .MuiSvgIcon-root {
+        margin: 10px;
+    }
+    .product__navbar-menu_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .product__navbar {
+        padding: 10px;
+        justify-content: space-around;
+    }
+    .product__navbar-sign{
+        display: none;
+    }
+    .product__navbar-menu_container{
+        top: 20px;
+        right: -15px;
+    }
+    .product__navbar-menu_container-links-sign{
+        display: block;
+    }
+}

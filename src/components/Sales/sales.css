@@ -1,0 +1,12 @@
+.container__sales {
+    background-color: #274393;
+    color: white;
+    height: 50px;
+    width: 100%;
+}
+
+.container__sales-h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+}

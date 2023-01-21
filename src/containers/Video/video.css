@@ -1,0 +1,12 @@
+.container__video{
+    padding: 0 15%;
+}
+.container__video video{
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    .container__video{
+        padding: 0% 0%;
+    }
+}

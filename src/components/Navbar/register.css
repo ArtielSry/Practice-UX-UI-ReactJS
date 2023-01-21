@@ -1,0 +1,75 @@
+.modal {
+    font-size: 12px;
+  }
+  .popup-content{
+    width: 60% !important;
+  }
+  .modal > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+  }
+  .content input {
+    border: 1px solid rgb(189, 189, 189);
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+  }
+  .content button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .button{
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(143, 143, 143);
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+  }
+  .button:hover {
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+
+@media screen and (max-width:600px){
+
+  .modal > .content {
+    width: 220px;
+  }
+}
